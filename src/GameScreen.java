@@ -116,6 +116,8 @@ public class GameScreen extends JFrame {
         }
         if (selectedTile == tile){
             selectedTile.setBackground(new Color(250, 250, 255));
+            if (Integer.valueOf(selectedTile.getText())==selectedNumber)
+                selectedTile.setText("");
             selectedRow = -1;
             selectedColumn = -1;
             selectedTile = null;
